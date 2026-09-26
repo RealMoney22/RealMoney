@@ -24,10 +24,10 @@
       width: 100%;
       max-width: 550px;
       margin: auto;
-      padding: 35px 18px;
+      padding: 35px 18px 45px;
     }
 
-    /* Logo */
+    /* Header */
     .header {
       text-align: center;
       margin-bottom: 35px;
@@ -57,7 +57,7 @@
       margin-top: 7px;
     }
 
-    /* Cards */
+    /* Package Card */
     .card {
       background: #101010;
       border: 1px solid #292929;
@@ -99,12 +99,53 @@
       border-radius: 10px;
       font-size: 16px;
       font-weight: bold;
+      border: none;
+      cursor: pointer;
       transition: 0.2s;
     }
 
     .buy-btn:hover {
       background: #ddd;
       transform: translateY(-1px);
+    }
+
+    /* Binance Form */
+    .payment-box {
+      margin-top: 15px;
+      padding: 16px;
+      background: #080808;
+      border: 1px solid #292929;
+      border-radius: 12px;
+    }
+
+    .payment-box label {
+      display: block;
+      color: #aaa;
+      font-size: 13px;
+      margin: 0 0 7px;
+    }
+
+    .payment-box label.second {
+      margin-top: 13px;
+    }
+
+    .payment-box input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #333;
+      border-radius: 8px;
+      background: #151515;
+      color: #fff;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .payment-box input::placeholder {
+      color: #666;
+    }
+
+    .payment-box input:focus {
+      border-color: #777;
     }
 
     .footer {
@@ -120,13 +161,17 @@
 
   <div class="container">
 
-    <!-- Header -->
+    <!-- HEADER -->
     <div class="header">
-      <div class="logo">RM</div>
+
+      <div class="logo">
+        RM
+      </div>
 
       <h1>RealMoney</h1>
 
       <p>Choose Your Package</p>
+
     </div>
 
 
@@ -152,6 +197,28 @@
         rel="noopener">
         Buy Now
       </a>
+
+      <div class="payment-box">
+
+        <label>
+          Binance Name
+        </label>
+
+        <input
+          type="text"
+          placeholder="Enter Binance Name"
+        >
+
+        <label class="second">
+          Binance ID
+        </label>
+
+        <input
+          type="text"
+          placeholder="Enter Binance ID"
+        >
+
+      </div>
 
     </div>
 
@@ -179,6 +246,28 @@
         Buy Now
       </a>
 
+      <div class="payment-box">
+
+        <label>
+          Binance Name
+        </label>
+
+        <input
+          type="text"
+          placeholder="Enter Binance Name"
+        >
+
+        <label class="second">
+          Binance ID
+        </label>
+
+        <input
+          type="text"
+          placeholder="Enter Binance ID"
+        >
+
+      </div>
+
     </div>
 
 
@@ -204,6 +293,28 @@
         rel="noopener">
         Buy Now
       </a>
+
+      <div class="payment-box">
+
+        <label>
+          Binance Name
+        </label>
+
+        <input
+          type="text"
+          placeholder="Enter Binance Name"
+        >
+
+        <label class="second">
+          Binance ID
+        </label>
+
+        <input
+          type="text"
+          placeholder="Enter Binance ID"
+        >
+
+      </div>
 
     </div>
 
