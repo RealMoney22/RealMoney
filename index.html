@@ -325,5 +325,15 @@
 
   </div>
 
+  <script>
+    function checkFields(nameInput, idInput, button) {
+      const ready =
+        nameInput.value.trim() !== "" &&
+        idInput.value.trim() !== "";
+
+      button.disabled = !ready;
+    }
+  </script>
+
 </body>
 </html>
